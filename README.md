@@ -1,2 +1,2 @@
-# java-practice
-java practice repository
+# Hands on Java concepts
+Repository contains code of different Java topics
