@@ -1,4 +1,4 @@
-package designpattern;
+package designpattern.creational;
 
 public class ChoclateFactorySingletonDemo {
 

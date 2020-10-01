@@ -24,16 +24,17 @@ public class SortingListDemo {
 
 		employees.forEach(System.out::println);
 		Comparator<Employee> compareByName = (e1, e2) -> e1.getName().compareTo(e2.getName());
+		// sorts passed list
 		Collections.sort(employees, compareByName);
 		System.out.println("Sorted by Id:" + employees);
-		
+
 		// creates new sorted list
 		List<Employee> sortedEmployeesByName = employees.stream().sorted(compareByName).collect(Collectors.toList());
-		
 
 		Comparator<Employee> compareById = (e1, e2) -> e1.getId().compareTo(e2.getId());
 		Collections.sort(employees, compareById);
 		System.out.println("Sorted by Id:" + employees);
+		
 		Collections.sort(employees, compareById.reversed());
 		System.out.println("Sorted by Id:" + employees);
 
@@ -44,17 +45,17 @@ public class SortingListDemo {
 		empTreeSet.forEach(System.out::println);
 
 		Map<Employee, String> map = new TreeMap<>(compareByName);
-		
+
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 		LinkedList<Integer> linkedList = new LinkedList<Integer>();
 		linkedList.add(-8);
 		linkedList.add(10);
 		linkedList.add(-20);
-		//linkedList.add(null);
+		// linkedList.add(null);
 		Comparator<Integer> r = Collections.reverseOrder();
-		Collections.sort(linkedList,r);
-		for(int i : linkedList) {
-			System.out.println(i+" ");
+		Collections.sort(linkedList, r);
+		for (int i : linkedList) {
+			System.out.println(i + " ");
 		}
 		Scanner s = new Scanner(System.in);
 		String str1 = s.nextLine(); // Reading input from STDIN
@@ -65,7 +66,7 @@ public class SortingListDemo {
 		String str2 = s1.nextLine(); // Reading input from STDIN
 		System.out.println("Hi, " + str2 + "."); // Writing output to STDOUT
 		System.out.println("String with removed chars:" + removeCharacters(str1, str2));
-		
+
 	}
 
 	private static String removeCharacters(String str1, String str2) {

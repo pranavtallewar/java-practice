@@ -1,5 +1,5 @@
 
-public class ThreadDemo {
+public class ThreadsPrintOddEvenDemo {
 
 	public static void main(String[] args) {
 		OddEvenPrint threadObj = new OddEvenPrint();
