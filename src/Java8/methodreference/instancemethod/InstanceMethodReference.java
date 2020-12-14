@@ -20,7 +20,12 @@ public class InstanceMethodReference {
 
 		Thread t = new Thread(imr::printMsg);
 		t.start();
-
+		int jj = 11;
+		Integer ii = jj;
+		
+		System.out.println(ii);
+		int kk = ii;
+		System.out.println(kk);
 	}
 
 }

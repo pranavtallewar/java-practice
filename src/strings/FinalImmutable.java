@@ -6,7 +6,7 @@ public class FinalImmutable {
 		final StringBuilder sb  = new StringBuilder("Hello");
 		System.out.println(sb.toString());
 		
-		// Even though reference varibale sb is final 
+		// Even though reference variable sb is final 
         // We can perform any changes 
 		sb.append(" World");
 		System.out.println("Post appending:"+sb.toString());

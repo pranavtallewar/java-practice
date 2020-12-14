@@ -2,6 +2,7 @@ package Java8;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.Map;
@@ -29,16 +30,17 @@ public class StreamCreation {
 				new Employee1(3, "Mark Zuckerberg", 300000.0), null, new Employee1(4, "Mukesh Ambani", 3500000.0),
 				new Employee1(5, "Ratan Tata", 250000.0), null };
 
-		
-		
 		// ways of obtaining stream
 		Stream.of(arrayOfEmps);
 		List<Employee1> empList = Arrays.asList(arrayOfEmps);
 		Stream.of(arrayOfEmps[0], arrayOfEmps[1], arrayOfEmps[2]);
-		
+
+		empList.stream().filter(e -> e != null).map(e -> e.getName()).mapToInt(String::length)
+				.forEach(System.out::println);
+
 		System.out.println("Emp Names:" + empList.stream().filter(e -> e != null).map(Employee1::getName)
 				.collect(Collectors.toList()).toString());
-		
+
 		// forEach() loops over the stream elements, calling the supplied function on
 		// each element.
 		// forEach() is a terminal operation, which means that, after the operation is
@@ -48,6 +50,7 @@ public class StreamCreation {
 												// that pass a given test
 				.forEach(e -> e.salaryIncrement(10.0));
 		empList.forEach(System.out::println);
+		
 
 		// map() produces a new stream after applying a function to each element of the
 		// original stream
@@ -81,14 +84,13 @@ public class StreamCreation {
 
 		});
 		System.out.println();
-		productPriceList.forEach(s-> System.out.print(s+" "));
+		productPriceList.forEach(s -> System.out.print(s + " "));
 		System.out.println();
 		Double totalGSTPayable = productPriceList.stream()
 				.collect(Collectors.reducing(0.0, e -> e * 18 / 100, (p1, p2) -> p1 + p2));
 
 		System.out.println("Total GST Payable:" + totalGSTPayable + "\n");
 
-		
 		// peek() is used to perform multiple operations on each element of the stream
 		// before any terminal operation is applied
 		empList.stream().filter(e -> e != null).peek(e -> e.salaryIncrement(10.0)).peek(System.out::println)

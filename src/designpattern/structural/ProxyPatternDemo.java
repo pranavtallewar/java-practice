@@ -1,4 +1,4 @@
-package designpattern.creational;
+package designpattern.structural;
 
 public class ProxyPatternDemo {
 

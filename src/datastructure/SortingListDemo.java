@@ -30,7 +30,7 @@ public class SortingListDemo {
 
 		// creates new sorted list
 		List<Employee> sortedEmployeesByName = employees.stream().sorted(compareByName).collect(Collectors.toList());
-
+		sortedEmployeesByName.forEach(System.out::println);
 		Comparator<Employee> compareById = (e1, e2) -> e1.getId().compareTo(e2.getId());
 		Collections.sort(employees, compareById);
 		System.out.println("Sorted by Id:" + employees);
@@ -54,6 +54,7 @@ public class SortingListDemo {
 		// linkedList.add(null);
 		Comparator<Integer> r = Collections.reverseOrder();
 		Collections.sort(linkedList, r);
+		System.out.println("\nSorted list of integers in reversed order:\n");
 		for (int i : linkedList) {
 			System.out.println(i + " ");
 		}

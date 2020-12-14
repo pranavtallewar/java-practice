@@ -18,12 +18,13 @@ public class DefaultMethodsDemo implements Poet, Writer {
 	@Override
 	public void canWrite() {
 		Poet.super.canWrite();
+		Writer.super.canWrite();
 	}
 
 	public static void main(String[] args) {
 		DefaultMethodsDemo obj = new DefaultMethodsDemo();
 		obj.canWrite();
-		Writer.write();
+		Writer.write();		
 	}
 
 }

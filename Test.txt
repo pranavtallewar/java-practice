@@ -1,0 +1,120 @@
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
+The Oracle/PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables.
+The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.

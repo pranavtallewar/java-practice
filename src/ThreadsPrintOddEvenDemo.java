@@ -4,20 +4,10 @@ public class ThreadsPrintOddEvenDemo {
 	public static void main(String[] args) {
 		OddEvenPrint threadObj = new OddEvenPrint();
 		threadObj.odd = true;
-		Thread t1 = new Thread(new Runnable() {
 
-			@Override
-			public void run() {
-				threadObj.printEven();
-			}
-		});
-		Thread t2 = new Thread(new Runnable() {
+		Thread t1 = new Thread(() -> threadObj.printEven());
+		Thread t2 = new Thread(() -> threadObj.printOdd());
 
-			@Override
-			public void run() {
-				threadObj.printOdd();
-			}
-		});
 		Thread.UncaughtExceptionHandler handler = new Thread.UncaughtExceptionHandler() {
 
 			@Override
@@ -33,7 +23,6 @@ public class ThreadsPrintOddEvenDemo {
 		t2.start();
 		try {
 			t1.join();
-			t2.join();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -43,7 +32,7 @@ public class ThreadsPrintOddEvenDemo {
 }
 
 class OddEvenPrint {
-	boolean odd;
+	volatile boolean odd;
 	int count = 1;
 	int MAX = 20;
 
@@ -73,7 +62,7 @@ class OddEvenPrint {
 
 		synchronized (this) {
 			while (count < MAX) {
-			
+
 				System.out.println("Checking even loop");
 				while (odd) {
 					try {

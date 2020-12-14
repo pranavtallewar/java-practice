@@ -34,12 +34,10 @@ public class TestExceptionPropagation {
 		}
 
 		try {
-			new TestExceptionPropagation().validateAge(21);
 			new TestExceptionPropagation().validateAge(17);
 		} catch (InvalidAgeException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 }

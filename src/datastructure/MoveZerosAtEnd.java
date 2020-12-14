@@ -3,7 +3,7 @@ package datastructure;
 public class MoveZerosAtEnd {
 
 	public static void main(String[] args) {
-		int[] nums = new int[] { 0, 1, 0, 3, 0, 4, 0, 12 };
+		int[] nums = new int[] { 1, 5, 0, 3, 0, 4, 0, 12 };
 		moveZerosAtEnd(nums);
 		for (int c = 0; c < nums.length; c++) {
 			System.out.print(nums[c] + " ");

@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class ThrowsDemo {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args){
 		M m = new M();
 		m.method();
 
@@ -14,12 +14,12 @@ public class ThrowsDemo {
 }
 
 class M {
-	void method() throws IOException {
+	void method()  {
 		try {
 			System.out.println("Testing demo");
 			int c = 5 / 0;
 		} catch (Exception e) {
-			throw new IOException("device error", e);
+			throw new RuntimeException("device error", e);	
 		}
 
 	}

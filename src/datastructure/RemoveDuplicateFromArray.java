@@ -10,37 +10,39 @@ public class RemoveDuplicateFromArray {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("enter size of the array");
 		int l = Integer.parseInt(br.readLine());
-		int[] a = new int[l];
+		int[] array = new int[l];
 		// insert elements in the array logic
 		System.out.println("enter a elements\n");
 		for (int i = 0; i < l; i++) {
-			
+
 			int el = Integer.parseInt(br.readLine());
-			a[i] = el;
+			array[i] = el;
 		}
 		// sorting elements in the array logic
+
 		for (int i = 0; i < l; i++) {
 			for (int j = 0; j < l - 1; j++) {
-				if (a[j] > a[j + 1]) {
-					int temp = a[j];
-					a[j] = a[j + 1];
-					a[j + 1] = temp;
+				if (array[j] > array[j + 1]) {
+					int temp = array[j];
+					array[j] = array[j + 1];
+					array[j + 1] = temp;
 				}
 			}
 		}
+
 		// remove duplicate elements logic
 		int b = 0;
-		a[b] = a[0];
+		array[b] = array[0];
 		for (int i = 1; i < l; i++) {
-			if (a[b] != a[i]) {
+			if (array[b] != array[i]) {
 				b++;
-				a[b] = a[i];
-
+				array[b] = array[i];
 			}
 
 		}
+
 		for (int i = 0; i <= b; i++) {
-			System.out.println(a[i]);
+			System.out.println(array[i]);
 		}
 	}
 
