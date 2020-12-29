@@ -1,11 +1,13 @@
 package designpattern.structural.decorator;
 
 import org.junit.Test;
+import org.junit.jupiter.api.Order;
 
 public class DecoratorTest {
 
 	@Test
-	public void testDecorator() {
+	@Order(1)
+	public void testDecoratorForThickCrust() {
 		Pizza pizza = new ThickCrustPizza();
 		System.out.println(pizza.getDescription());
 		System.out.println(pizza.getCost());
@@ -24,7 +26,8 @@ public class DecoratorTest {
 	}
 
 	@Test
-	public void testDecorator1() {
+	@Order(0)
+	public void testDecoratorForCheeseBurst() {
 		Pizza pizza = new CheeseBurst();
 		System.out.println(pizza.getDescription());
 		System.out.println(pizza.getCost());

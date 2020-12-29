@@ -11,9 +11,6 @@ public class FindDisappearedNumInArray {
 		System.out.println(list);
 	}
 
-	/**
-	 * 
-	 */
 	static List<Integer> findDisappearedNumbers(int[] nums) {
 		int i = 0, x, t, l = nums.length;
 		List<Integer> missing = new ArrayList<>();
@@ -21,7 +18,6 @@ public class FindDisappearedNumInArray {
 			x = nums[i];
 			if (x != (i + 1)) {
 				if (nums[x - 1] != x) {
-					// swap(nums,i,x-1);
 					t = nums[i];
 					nums[i] = nums[x - 1];
 					nums[x - 1] = t;

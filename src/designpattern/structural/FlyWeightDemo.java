@@ -19,9 +19,7 @@ public class FlyWeightDemo {
 		redThinPen2.draw("Hello");
 		System.out.println(redThinPen.hashCode());
 		System.out.println(redThinPen2.hashCode());
-
 	}
-
 }
 
 interface Pen {

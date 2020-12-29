@@ -12,5 +12,4 @@ public class CheeseBurst extends Pizza {
 	public BigDecimal getCost() {
 		return new BigDecimal(20.0);
 	}
-
 }

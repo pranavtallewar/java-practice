@@ -30,7 +30,6 @@ public class ElementOccuranceCountInArray {
 		Arrays.stream(inputArray).forEach(i -> {
 			if (elementCountMap.containsKey(i)) {
 				// If element is present in elementCountMap, incrementing it's count by 1
-
 				elementCountMap.put(i, elementCountMap.get(i) + 1);
 			} else {
 				// If element is not present in elementCountMap,
