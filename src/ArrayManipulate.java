@@ -14,6 +14,7 @@ public class ArrayManipulate {
 
 		Scanner s = new Scanner(System.in);
 		String arrayInput = s.nextLine();
+		
 		int[] int_array = toIntArray(s.nextLine().split(" "));
 	}
 
