@@ -7,7 +7,7 @@ public class ObserverDPDemo {
 
 	public static void main(String[] args) {
 		WeatherData wd = new WeatherData();
-		ConcurrentDisplay cd = new ConcurrentDisplay(wd);
+		new ConcurrentDisplay(wd);
 		
 		wd.setMeassurements(80, 65, 30.4f);
 		wd.setMeassurements(70, 75, 31.4f);
