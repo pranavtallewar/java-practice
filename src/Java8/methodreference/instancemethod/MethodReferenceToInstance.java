@@ -1,6 +1,6 @@
 package Java8.methodreference.instancemethod;
 
-public class InstanceMethodReference {
+public class MethodReferenceToInstance {
 
 	public String saySomething() {
 		return "Hello this is no-static method.";
@@ -12,7 +12,7 @@ public class InstanceMethodReference {
 
 	public static void main(String[] args) {
 
-		InstanceMethodReference imr = new InstanceMethodReference();
+		MethodReferenceToInstance imr = new MethodReferenceToInstance();
 		// Referring non-static method using reference.
 		Sayable sayable = imr::saySomething;
 		//
@@ -22,10 +22,10 @@ public class InstanceMethodReference {
 		t.start();
 		int jj = 11;
 		Integer ii = jj;
-		
-		System.out.println(ii);
+
+		System.out.println("ii->" + ii);
 		int kk = ii;
-		System.out.println(kk);
+		System.out.println("kk->" + kk);
 	}
 
 }

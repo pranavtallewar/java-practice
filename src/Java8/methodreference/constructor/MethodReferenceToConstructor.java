@@ -1,6 +1,6 @@
 package Java8.methodreference.constructor;
 
-public class ConstructorReference {
+public class MethodReferenceToConstructor {
 
 	public static void main(String[] args) {
 		// referring constructor with the help of functional interface

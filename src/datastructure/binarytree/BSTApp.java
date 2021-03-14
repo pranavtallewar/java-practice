@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure.binarytree;
 
 public class BSTApp {
 
@@ -13,14 +13,18 @@ public class BSTApp {
 		b.addNode(root, 7);
 		b.addNode(root, 1);
 		b.addNode(root, 14);
+		b.addNode(root, 11);
 		b.addNode(root, 13);
-		System.out.println(root);
+		b.inorder(root);
+		System.out.println("\nIs 10 Present?");
 		if (b.bstSearch(root, 10)) {
 			System.out.println("Yes");
 			b.deleteNode(root, 10);
 			b.inorder(root);
 		} else
 			System.out.println("No");
+		
+		
 	}
 
 }
@@ -59,6 +63,7 @@ class BST {
 	public void inorder(Node node) {
 		if (node != null) {
 			inorder(node.left);
+			System.out.print(" "+node.val);
 			inorder(node.right);
 		}
 
@@ -90,7 +95,7 @@ class BST {
 				return node.right;
 			else if (node.right == null)
 				return node.left;
-			// node with two children : Get the inorder successor
+			// node with two children : Get the in order successor of right subtree
 			node.val = minVal(node.right);
 
 			// Deletes the inorder successor

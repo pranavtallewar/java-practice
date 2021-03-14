@@ -116,6 +116,8 @@ class CircularLinkedList {
 		return false;
 	}
 
+	// time complexity O(1) : first node to be deleted - best case
+	// time complexity O(n) : last node to be deleted - worst case
 	public void delete(int key) {
 		if(null == head)
 			return;
