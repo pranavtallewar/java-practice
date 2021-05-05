@@ -28,7 +28,7 @@ public class StreamCreation {
 		Employee1[] arrayOfEmps = { new Employee1(1, "Jeff Bezos", 100000.0), new Employee1(2, "Bill Gates", 200000.0),
 				new Employee1(3, "Mark Zuckerberg", 300000.0), null, new Employee1(4, "Mukesh Ambani", 3500000.0),
 				new Employee1(5, "Ratan Tata", 250000.0), null };
-
+		
 		// ways of obtaining stream
 		Stream.of(arrayOfEmps);
 		List<Employee1> empList = Arrays.asList(arrayOfEmps);
@@ -37,6 +37,8 @@ public class StreamCreation {
 		empList.stream().filter(e -> e != null).map(e -> e.getName()).mapToInt(String::length)
 				.forEach(System.out::println);
 
+		Double sum = empList.stream().mapToDouble(e -> e.getSalary()).sum();
+		
 		System.out.println("Emp Names:" + empList.stream().filter(e -> e != null).map(Employee1::getName)
 				.collect(Collectors.toList()).toString());
 
