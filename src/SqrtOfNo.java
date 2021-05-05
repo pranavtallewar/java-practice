@@ -3,7 +3,7 @@ public class SqrtOfNo {
 
 	public static void main(String[] args) {
 		System.out.println("The square root of 144 is: " + squareRoot(144));
-		System.out.println("The square root of 144 is: " + floorSqrt(144));
+		System.out.println("The square root of 144 is: " + floorSqrt(625));
 	}
 
 	public static double squareRoot(int num) {
@@ -41,7 +41,6 @@ public class SqrtOfNo {
 			// smaller than x, and move closer to sqrt(x)
 			if (mid * mid < x) {
 				start = mid + 1;
-				ans = mid;
 			} else // If mid*mid is greater than x
 				end = mid - 1;
 		}
