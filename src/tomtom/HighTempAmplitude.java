@@ -37,11 +37,9 @@ public class HighTempAmplitude {
 	}
 
 	public static int caluclateAmplitude(int[] t) {
-		int diff = 0;
 		int max = Arrays.stream(t).max().getAsInt();
 		int min = Arrays.stream(t).min().getAsInt();
-		diff = max - min;
-		return diff;
+		return max - min;
 	}
 
 	public static int getIndexOfLargest(int[] array) {
