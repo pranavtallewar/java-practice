@@ -1,121 +1,116 @@
 package designpattern.creational;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import designpattern.creational.PrototypeFactory.ModelType;
 
 public class PrototypeDesignPatternDemo {
 
 	public static void main(String[] args) {
-		if (args.length > 0) {
-			initializePrototypes();
-			List<Prototype> prototypes = new ArrayList<>();
-			// 6. Client does not use "new"
-			for (String protoName : args) {
-				Prototype prototype = PrototypeModule.createPrototype(protoName);
-				if (prototype != null) {
-					prototypes.add(prototype);
-				}
-			}
-			for (Prototype p : prototypes) {
-				p.execute();
-			}
-		} else {
-			System.out.println("Run again with arguments of command string ");
+		try {
+			String moviePrototype = PrototypeFactory.getInstance(ModelType.MOVIE).toString();
+			System.out.println(moviePrototype);
+
+			String albumPrototype = PrototypeFactory.getInstance(ModelType.ALBUM).toString();
+			System.out.println(albumPrototype);
+
+			String showPrototype = PrototypeFactory.getInstance(ModelType.SHOW).toString();
+			System.out.println(showPrototype);
+
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
 		}
 	}
 
-	public static void initializePrototypes() {
-		PrototypeModule.addPrototype(new PrototypeAlpha());
-		PrototypeModule.addPrototype(new PrototypeBeta());
-		PrototypeModule.addPrototype(new ReleasePrototype());
-	}
-
 }
 
-interface Prototype {
-	Prototype clone();
-
-	String getName();
-
-	void execute();
-}
-
-class PrototypeModule {
-	private static List<Prototype> prototypes = new ArrayList<>();
-
-	public static void addPrototype(Prototype prototype) {
-		prototypes.add(prototype);
+class PrototypeFactory {
+	public static class ModelType {
+		public static final String MOVIE = "movie";
+		public static final String ALBUM = "album";
+		public static final String SHOW = "show";
 	}
 
-	public static Prototype createPrototype(String name) {
-		Optional<Prototype> prototype = prototypes.stream().filter(p -> p.getName().equalsIgnoreCase(name)).findFirst();
-		if (prototype.isPresent())
-			return prototype.get().clone();
-		else
-			System.out.println(name + ": doesn't exist");
+	private static java.util.Map<String, PrototypeCapable> prototypes = new java.util.HashMap<String, PrototypeCapable>();
 
-		return null;
+	static {
+		prototypes.put(ModelType.MOVIE, new Movie());
+		prototypes.put(ModelType.ALBUM, new Album());
+		prototypes.put(ModelType.SHOW, new Show());
+	}
+
+	public static PrototypeCapable getInstance(final String s) throws CloneNotSupportedException {
+		return ((PrototypeCapable) prototypes.get(s)).clone();
 	}
 }
 
-class PrototypeAlpha implements Prototype {
+class Movie implements PrototypeCapable {
+	private String name = null;
 
-	private String name = "Alpha";
-
-	@Override
-	public Prototype clone() {
-		// TODO Auto-generated method stub
-		return new PrototypeAlpha();
-	}
-
-	@Override
-	public String getName() {
-		// TODO Auto-generated method stub
-		return name;
-	}
-
-	@Override
-	public void execute() {
-		System.out.println(name + " does some work");
-
-	}
-}
-
-class PrototypeBeta implements Prototype {
-	private String name = "BetaVersion";
-
-	@Override
-	public Prototype clone() {
-		return new PrototypeBeta();
-	}
-
-	@Override
 	public String getName() {
 		return name;
 	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	@Override
-	public void execute() {
-		System.out.println(name + ": does something");
+	public Movie clone() throws CloneNotSupportedException {
+		System.out.println("Cloning Movie object..");
+		return (Movie) super.clone();
+	}
+
+	@Override
+	public String toString() {
+		return "Movie";
 	}
 }
 
-class ReleasePrototype implements Prototype {
-	private String name = "ReleaseCandidate";
+class Album implements PrototypeCapable {
+	private String name = null;
 
-	@Override
-	public Prototype clone() {
-		return new ReleasePrototype();
-	}
-
-	@Override
 	public String getName() {
 		return name;
 	}
 
-	@Override
-	public void execute() {
-		System.out.println(name + ": does real work");
+	public void setName(String name) {
+		this.name = name;
 	}
+
+	@Override
+	public Album clone() throws CloneNotSupportedException {
+		System.out.println("Cloning Album object..");
+		return (Album) super.clone();
+	}
+
+	@Override
+	public String toString() {
+		return "Album";
+	}
+}
+
+class Show implements PrototypeCapable {
+	private String name = null;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public Show clone() throws CloneNotSupportedException {
+		System.out.println("Cloning Show object..");
+		return (Show) super.clone();
+	}
+
+	@Override
+	public String toString() {
+		return "Show";
+	}
+}
+
+interface PrototypeCapable extends Cloneable {
+	public PrototypeCapable clone() throws CloneNotSupportedException;
 }

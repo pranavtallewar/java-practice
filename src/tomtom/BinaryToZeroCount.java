@@ -1,3 +1,4 @@
+package tomtom;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
@@ -8,12 +9,11 @@ public class BinaryToZeroCount {
 		for(int i=0; i<=399999; i++) {
 			sb.append(1);
 		}
-		int res = new BinaryToZeroCount().solution_simple(sb.toString());
-		//int res = new BinaryToZeroCount().solution_simple("1111010101111");
+		//int res = new BinaryToZeroCount().solution_simple(sb.toString());
+		int res = new BinaryToZeroCount().solution_simple("1111010101111");
 		System.out.println(res);
 
 	}
-
 	public int solution(String S) {
 		BigInteger number = convertStringToBinary(S);
 		int count = 0;
@@ -42,9 +42,9 @@ public class BinaryToZeroCount {
 		}
 		return sum.toBigInteger();
 	}
-	public static int solution_simple(String s) {
-	    int firstOneAt = s.indexOf("1");
-	    return firstOneAt == -1 ? 0
-	         : s.replace("0", "").length() + s.length() - firstOneAt - 1;
+	// Submitted
+	public static int solution_simple(String S) {
+		int firstOneAt = S.indexOf("1");
+		return firstOneAt == -1 ? 0 : S.replace("0", "").length() + S.length() - firstOneAt - 1;
 	}
 }

@@ -18,6 +18,7 @@ public class StringDemo {
 		String s4 = new String(s2);
 		System.out.println((s2 == s4));
 		System.out.println(s2.equals(s4));
+		System.out.println(s4.equals(s3));
 	}
 
 }

@@ -32,7 +32,7 @@ public class ThreadsPrintOddEvenDemo {
 }
 
 class OddEvenPrint {
-	volatile boolean odd;
+	boolean odd;
 	int count = 1;
 	int MAX = 20;
 

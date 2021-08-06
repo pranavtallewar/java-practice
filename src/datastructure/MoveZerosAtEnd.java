@@ -26,7 +26,7 @@ public class MoveZerosAtEnd {
 	}
 
 	/**
-	 * O/P: 1 3 4 12 0 0 0 0
+	 * O/P: 1 5 3 4 12 0 0 0
 	 */
 	static void moveZerosAtEnd(int[] nums) {
 		int temp = 0;

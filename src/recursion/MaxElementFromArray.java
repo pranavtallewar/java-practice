@@ -4,7 +4,7 @@ public class MaxElementFromArray {
 
 	public static void main(String[] args) {
 		int[] array = { 11, 21, 0, 45, 10, 25 };
-
+		String[] str = "N|WDesk".split("\\|");
 		System.out.println(getMaxFromArray(array, array.length));
 	}
 
