@@ -21,7 +21,6 @@ public class SortingListDemo {
 		employees.add(new Employee(1, "Pranav Tallewar"));
 		employees.add(new Employee(2, "Pooja Mule"));
 		employees.add(new Employee(3, "Jay Mule"));
-
 		employees.forEach(System.out::println);
 		Comparator<Employee> compareByName = (e1, e2) -> e1.getName().compareTo(e2.getName());
 		// sorts passed list

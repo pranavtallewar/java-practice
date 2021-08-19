@@ -52,8 +52,14 @@ final class Employee {
 		this.name = name;
 		this.age = age;
 		this.date = new Date(date.getTime());
-		this.address = address;
-		this.map = map;
+		
+		Address clonedAddress = new Address();
+		clonedAddress.setAddress(address.getAddress());
+		clonedAddress.setAddressType(address.getAddressType());
+		clonedAddress.setCity(address.getCity());
+		this.address = clonedAddress;
+		
+		this.map = new HashMap<>(map);
 	}
 
 	public Integer getId() {

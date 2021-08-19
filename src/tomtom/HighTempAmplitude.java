@@ -1,7 +1,6 @@
 package tomtom;
 
 import java.util.Arrays;
-import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
 public class HighTempAmplitude {

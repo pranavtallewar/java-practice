@@ -28,17 +28,17 @@ public class StreamCreation {
 		Employee1[] arrayOfEmps = { new Employee1(1, "Jeff Bezos", 100000.0), new Employee1(2, "Bill Gates", 200000.0),
 				new Employee1(3, "Mark Zuckerberg", 300000.0), null, new Employee1(4, "Mukesh Ambani", 3500000.0),
 				new Employee1(5, "Ratan Tata", 250000.0), null };
-		
+
 		// ways of obtaining stream
 		Stream.of(arrayOfEmps);
 		List<Employee1> empList = Arrays.asList(arrayOfEmps);
 		Stream.of(arrayOfEmps[0], arrayOfEmps[1], arrayOfEmps[2]);
-
+		System.out.println("Employees Name length:");
 		empList.stream().filter(e -> e != null).map(e -> e.getName()).mapToInt(String::length)
 				.forEach(System.out::println);
 
-		Double sum = empList.stream().mapToDouble(e -> e.getSalary()).sum();
-		
+		Double sum = empList.stream().filter(e -> e != null).mapToDouble(e -> e.getSalary()).sum();
+
 		System.out.println("Emp Names:" + empList.stream().filter(e -> e != null).map(Employee1::getName)
 				.collect(Collectors.toList()).toString());
 
@@ -51,7 +51,6 @@ public class StreamCreation {
 												// that pass a given test
 				.forEach(e -> e.salaryIncrement(10.0));
 		empList.forEach(System.out::println);
-		
 
 		// map() produces a new stream after applying a function to each element of the
 		// original stream
@@ -75,7 +74,7 @@ public class StreamCreation {
 		System.out.println("Employee's salary greater than 3500010:" + emp);
 
 		List<Integer> intList = Arrays.asList(2, 5, 3, 2, 4, 3);
-		System.out.println();
+		System.out.println("getOddEvenList:" + new StreamCreation().getOddEven(intList));
 		intList.stream().distinct().forEach(s -> System.out.print(s + " "));
 
 		List<Double> productPriceList = Arrays.asList(20000.0, 25000.4, 3000.4, 2004.50, 40000.50, 32000.50);
