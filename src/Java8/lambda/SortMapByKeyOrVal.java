@@ -1,5 +1,6 @@
 package Java8.lambda;
 
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -29,7 +30,8 @@ public class SortMapByKeyOrVal {
 		System.out.println("-----------DISPLAY MAP SORTED BY KEY--------------");
 		sortedMapByKey.forEach((k, v) -> System.out.println("Key:" + k + " Val:" + v));
 
-		Map<Integer, String> sortedMapByVal = sortedMapByKey.entrySet().stream().sorted(Entry.comparingByValue())
+		Map<Integer, String> sortedMapByVal = sortedMapByKey.entrySet().stream()
+				.sorted(Entry.comparingByValue(Comparator.reverseOrder()))
 				.collect(Collectors.toMap(Entry::getKey, Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
 
 		System.out.println("-----------DISPLAY MAP SORTED BY KEY--------------");

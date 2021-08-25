@@ -44,6 +44,11 @@ public class MapDemo {
 			System.out.println("Key = " + key);
 			System.out.println("Values = " + values + "n");
 		}
+
+		Map<Apple, Apple> appleMap = new HashMap<>();
+		appleMap.put(apple1, apple1);
+		appleMap.forEach((k, v) -> System.out.println(k + " -> " + v));
+		
 	}
 
 }
@@ -94,6 +99,11 @@ final class Apple {
 		} else if (!size.equals(other.size))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Apple [color=" + color + ", size=" + size + "]";
 	}
 
 }
