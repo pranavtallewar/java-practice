@@ -8,13 +8,15 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import Java8.ExtractENamesNMakeListDemo;
+
 @DisplayName("Pass the method parameters provided by the @ValueSource annotation")
 public class StringReverseDemoTest {
 	StringReverseDemo demo;
-
+	
 	@BeforeEach
 	public void setUp() {
-		demo = new StringReverseDemo();
+		demo = new StringReverseDemo();	
 	}
 
 	@DisplayName("Should pass a non-null message to our test method")
