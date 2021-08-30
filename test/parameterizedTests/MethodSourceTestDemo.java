@@ -17,7 +17,7 @@ public class MethodSourceTestDemo {
 
 	@DisplayName("Should pass student id pass students stream")
 	@ParameterizedTest
-	@MethodSource("getStudents")
+	@MethodSource(value = { "getStudents", "getStudents1" })
 	public void testParameterizedMethodWithObject(Student student) {
 		System.out.println(student);
 		Assertions.assertTrue(student.getId() >= 1);
@@ -25,6 +25,10 @@ public class MethodSourceTestDemo {
 
 	private static Stream<Student> getStudents() {
 		return Stream.of(new Student(1, "Pranav"), new Student(2, "Miten"));
+	}
+
+	private static Stream<Object> getStudents1() {
+		return Stream.of(new Student(0, "Pranav"), new Student(0, "Miten"));
 	}
 }
 
